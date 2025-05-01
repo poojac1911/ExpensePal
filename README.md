@@ -1,70 +1,82 @@
-# ExpensePal
+---
 
-**ExpensePal** is a personal expense tracking application designed to help users monitor and manage their daily expenditures efficiently. Built using Kotlin for Android, this app provides a user-friendly interface to add, view, and categorize expenses.
+# 💰 ExpensePal
 
-## Features
+**ExpensePal** is a personal expense tracking Android application developed in Kotlin. It helps users effortlessly monitor, categorize, and manage daily expenses with a clean and intuitive UI.
 
-- **Add Expenses:** Quickly add new expenses with details such as amount, category, date, and description.
-- **View Expenses:** Browse through a list of all recorded expenses.
-- **Categorization:** Organize expenses into categories for better tracking.
-- **Expense Summary:** Get a summary of expenses over different time periods.
+---
 
-*Note: The above features are inferred based on standard expense tracking applications, as specific details are not provided in the repository.*
+## ✨ Features
 
-## Technologies Used
+- ➕ **Add Expenses** – Log daily expenses with details like amount, category, date, and description.
+- 📋 **View History** – Check a list of past expenses.
+- 🗂️ **Categorization** – Group expenses by category for better insights.
+- 📊 **Summary View** – Visual breakdown of spending over time (weekly/monthly).
+- 🎨 **Clean UI** – Smooth and user-friendly design using Material components.
 
-- **Kotlin:** Primary programming language for Android development.
-- **Android SDK:** Utilized for building the Android application.
-- **Gradle:** Build automation tool for managing dependencies and building the project.
+---
 
-## Getting Started
+## 🛠️ Tech Stack
 
-To run the ExpensePal application on your local machine, follow these steps:
+- 🧠 **Kotlin** – Modern Android development.
+- 🧱 **MVVM Architecture** – Maintainable and testable structure.
+- 🗃️ **Room Database** – Persistent local storage for expense data.
+- ⚙️ **Gradle** – Project build and dependency management.
+- 📱 **Android SDK** – Native Android app development.
 
-### Prerequisites
+---
 
-- **Android Studio:** Ensure you have the latest version installed. You can download it from [here](https://developer.android.com/studio).
-- **Android Device or Emulator:** Set up an Android device or use the built-in emulator in Android Studio.
+## 🚀 Getting Started
 
-### Installation
+### 📋 Prerequisites
 
-1. **Clone the Repository:**
+- [Android Studio](https://developer.android.com/studio)
+- Android Emulator or a physical device
 
-   ```bash
-   git clone https://github.com/poojac1911/ExpensePal.git
-   ```
+### 🔧 Installation
 
-2. **Open in Android Studio:**
+```bash
+git clone https://github.com/poojac1911/ExpensePal.git
+```
 
-   - Launch Android Studio.
-   - Click on `File` > `Open`.
-   - Navigate to the cloned `ExpensePal` directory and select it.
+1. Open the project in **Android Studio**.
+2. Let Gradle sync and resolve dependencies.
+3. Build the project using `Build > Make Project`.
+4. Run on emulator/device using `Run > Run app` or `Shift + F10`.
 
-3. **Build the Project:**
+---
 
-   - Allow Android Studio to build the project and download any necessary dependencies.
-
-4. **Run the Application:**
-
-   - Connect your Android device or start an emulator.
-   - Click on the `Run` button or press `Shift + F10` to install and launch the app.
-
-## Project Structure
+## 📁 Project Structure
 
 ```
 ExpensePal/
-├── app/                   # Contains the main application code
+├── app/                   # Application source code
+│   ├── data/              # Room DB, DAO, Entities
+│   ├── ui/                # Activities, ViewModels, Adapters
+│   └── utils/             # Utility classes
 ├── gradle/                # Gradle wrapper files
-├── .gitignore             # Specifies files to ignore in Git
-├── build.gradle           # Project-level Gradle configuration
-├── gradle.properties      # Gradle properties
-├── gradlew                # Unix shell script to run Gradle tasks
-├── gradlew.bat            # Windows batch file to run Gradle tasks
-└── settings.gradle        # Settings for Gradle build
+├── build.gradle           # Project-level configuration
+└── settings.gradle        # Module inclusion settings
 ```
 
-## Contact
+---
 
-For any questions or suggestions, please open an issue in the repository.
+## 📌 TODO (Optional)
+
+- 📈 Add pie/bar chart visualization
+- ☁️ Integrate cloud backup
+- 🔔 Add daily/weekly expense reminders
+
+---
+
+## 🤝 Contributing
+
+Feel free to fork the project and submit pull requests to improve the app or fix bugs.
+
+---
+
+## 📬 Contact
+
+📧 For questions, suggestions, or feedback, please [open an issue](https://github.com/poojac1911/ExpensePal/issues).
 
 ---
