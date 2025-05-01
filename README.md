@@ -1,37 +1,45 @@
+Thanks! Here's the updated `README.md` with Firebase integration included:
+
 ---
 
 # 💰 ExpensePal
 
-**ExpensePal** is a personal expense tracking Android application developed in Kotlin. It helps users effortlessly monitor, categorize, and manage daily expenses with a clean and intuitive UI.
+**ExpensePal** is a personal expense tracking Android application built with **Kotlin** and **Firebase**. It enables users to effortlessly log and categorize their expenses, get summaries, and store data securely. The app offers a modern, intuitive UI and supports local and cloud storage for scalability and flexibility.
 
 ---
 
 ## ✨ Features
 
 - ➕ **Add Expenses** – Log daily expenses with details like amount, category, date, and description.
-- 📋 **View History** – Check a list of past expenses.
-- 🗂️ **Categorization** – Group expenses by category for better insights.
-- 📊 **Summary View** – Visual breakdown of spending over time (weekly/monthly).
-- 🎨 **Clean UI** – Smooth and user-friendly design using Material components.
+- 📋 **View History** – Browse a list of past expenses.
+- 🗂️ **Categorization** – Group expenses by category.
+- 📊 **Expense Summary** – View summaries by day, week, or month.
+- 🔒 **Firebase Authentication** – Sign in securely with Google.
+- ☁️ **Firebase Firestore** – Sync expense data across devices.
+- 🎨 **Material UI** – Clean and intuitive user interface.
 
 ---
 
 ## 🛠️ Tech Stack
 
-- 🧠 **Kotlin** – Modern Android development.
-- 🧱 **MVVM Architecture** – Maintainable and testable structure.
-- 🗃️ **Room Database** – Persistent local storage for expense data.
-- ⚙️ **Gradle** – Project build and dependency management.
-- 📱 **Android SDK** – Native Android app development.
-
+- 🧠 **Kotlin** – Modern, concise Android programming.
+- 🏗 **MVVM Architecture** – For clean, maintainable code.
+- 🗃️ **Room Database** – Local persistence.
+- 🔥 **Firebase Suite**:
+    - **Authentication** – Secure login via Google.
+    - **Cloud Firestore** – Real-time data sync and cloud storage.
+- ⚙️ **Gradle** – Build automation.
 ---
 
 ## 🚀 Getting Started
 
 ### 📋 Prerequisites
 
-- [Android Studio](https://developer.android.com/studio)
-- Android Emulator or a physical device
+- Android Studio
+- Firebase Project with:
+    - Authentication enabled (Google)
+    - Firestore Database setup
+- Android device or emulator
 
 ### 🔧 Installation
 
@@ -39,10 +47,10 @@
 git clone https://github.com/poojac1911/ExpensePal.git
 ```
 
-1. Open the project in **Android Studio**.
-2. Let Gradle sync and resolve dependencies.
-3. Build the project using `Build > Make Project`.
-4. Run on emulator/device using `Run > Run app` or `Shift + F10`.
+1. Open in **Android Studio**.
+2. Sync Gradle and let it install dependencies.
+3. Add your `google-services.json` file to the `app/` directory from your Firebase project.
+4. Run the app on a device/emulator with `Shift + F10`.
 
 ---
 
@@ -50,33 +58,35 @@ git clone https://github.com/poojac1911/ExpensePal.git
 
 ```
 ExpensePal/
-├── app/                   # Application source code
-│   ├── data/              # Room DB, DAO, Entities
-│   ├── ui/                # Activities, ViewModels, Adapters
-│   └── utils/             # Utility classes
-├── gradle/                # Gradle wrapper files
-├── build.gradle           # Project-level configuration
-└── settings.gradle        # Module inclusion settings
+├── app/
+│   ├── data/             # Room DB, Firestore services
+│   ├── ui/               # Activities, ViewModels, Adapters
+│   ├── auth/             # Firebase Auth handlers
+│   └── utils/            # Helper classes
+├── google-services.json  # Firebase config file (not in repo)
+├── build.gradle
+└── settings.gradle
 ```
 
 ---
 
-## 📌 TODO (Optional)
+## 📌 TODO
 
-- 📈 Add pie/bar chart visualization
-- ☁️ Integrate cloud backup
-- 🔔 Add daily/weekly expense reminders
+- 📈 Visualize expenses with pie/bar charts
+- 🔔 Add notifications for budget limits
+- 🧾 Export data to CSV or PDF
+- 🌐 Dark mode support
 
 ---
 
 ## 🤝 Contributing
 
-Feel free to fork the project and submit pull requests to improve the app or fix bugs.
+Contributions are welcome! Fork the repository and submit a pull request.
 
 ---
 
 ## 📬 Contact
 
-📧 For questions, suggestions, or feedback, please [open an issue](https://github.com/poojac1911/ExpensePal/issues).
+📧 For any questions, please open an issue or reach out via GitHub.
 
 ---
