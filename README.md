@@ -1,5 +1,3 @@
-Thanks! Here's the updated `README.md` with Firebase integration included:
-
 ---
 
 # 💰 ExpensePal
