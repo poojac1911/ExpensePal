@@ -1,5 +1,3 @@
----
-
 # 💰 ExpensePal
 
 **ExpensePal** is a personal expense tracking Android application built with **Kotlin** and **Firebase**. It enables users to effortlessly log and categorize their expenses, get summaries, and store data securely. The app offers a modern, intuitive UI and supports local and cloud storage for scalability and flexibility.
@@ -87,4 +85,3 @@ Contributions are welcome! Fork the repository and submit a pull request.
 
 📧 For any questions, please open an issue or reach out via GitHub.
 
----
